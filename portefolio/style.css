@@ -3,7 +3,7 @@ body
     background-image:url(background.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: tahoma;
 }
 main
 {
@@ -54,6 +54,17 @@ a:hover
     -webkit-transition-property: transform;
     transition-property: transform;
     
+}
+
+.elm {
+    text-decoration:none ;
+    color:white;
+    padding:10px 30px;
+    font-size:large;
+    border: solid white 2px;
+    border-radius: 20px;
+    background-image:url(background.jpg) ;
+    background-position:50% 50%;
 }
 
 
