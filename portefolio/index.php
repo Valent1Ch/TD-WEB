@@ -8,19 +8,41 @@
 <body>
    <nav>
     <ol>
-        <a href="index.php#acceuil">Accueil</a>
-        <a href="">A propos</a>
+        <a href="index.php#accueil">Accueil</a>
+        <a href="index.php#Apropos">A propos</a>
         <a href="index.php#competences">Compétences</a>
-        <a href="">Expérience</a>
+        <a href="index.php#experience">Expérience</a>
         <a href="">Formation</a>
         <a href="">Contact</a>
     </ol>
    </nav>
     <main>
-    <a name="acceuil"></a>
+    <a name="accueil">Accueil</a>
 
 
-     <a name="competences"></a>
+
+
+
+     <a name="Apropos"> A Propos</a>
+   
+    <?php  
+    
+    $content=file_get_contents('competenceyaml.yaml');
+        $yamlContent=yaml_parse($content);
+        //echo '<pre>'.print_r($yamlContent,true).'</pre>';
+        $competences=$yamlContent['A propos'];
+
+        echo "<ul class='elm'>";
+        foreach($competences as $comp){
+            echo "<li>$comp</li>";
+        }
+        echo "</ul>";
+    
+    
+    ?>
+   
+     <a name="competences">Compétences</a>
+
     <?php
         $content=file_get_contents('competenceyaml.yaml');
         $yamlContent=yaml_parse($content);
@@ -35,7 +57,26 @@
 
     ?>
 
-<a name="index.php#contact"></a>
+
+<a name="experience"> Expérience</a>
+
+
+
+<?php
+        $content=file_get_contents('competenceyaml.yaml');
+        $yamlContent=yaml_parse($content);
+        //echo '<pre>'.print_r($yamlContent,true).'</pre>';
+        $competences=$yamlContent['Experiences'];
+
+        echo "<ul class='elm'>";
+        foreach($competences as $comp){
+            echo "<li>$comp</li>";
+        }
+        echo "</ul>";
+
+    ?>
+
+<a name="index.php#contact">Contact</a>
 
 <form method="post">
         <label>Votre email</label>
@@ -45,6 +86,8 @@
         <input type="submit">
     </form>
        
+ 
+
     </main>
 </body>
 </html>
