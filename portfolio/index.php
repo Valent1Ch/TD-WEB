@@ -10,7 +10,7 @@
 <body>
    <nav>
     <ol>
-        <a href="index.php#accueil">Accueil</a>
+        <a href="index.php#accueil">Accueil</a> 
         <a href="index.php#Apropos">A propos</a>
         <a href="index.php#competences">Compétences</a>
         <a href="index.php#experience">Expérience</a>
@@ -19,9 +19,10 @@
     </ol>
    </nav>
     <main>
+  
     <a name="accueil">Accueil</a>
 
-
+    
     
 
      <a name="Apropos"> A Propos</a>
@@ -98,7 +99,7 @@
     </form>
        
  
-
+    
     </main>
 </body>
 </html>
