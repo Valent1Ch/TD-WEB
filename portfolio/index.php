@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="portfolioicon1.png" type="image/x-icon">
-    <title>Document</title>
+    <link rel="shortcut icon" href="portfolioicon1.ico" type="image/x-icon">
+    <title>PortFolio</title>
 </head>
 <body>
 <br>   
@@ -16,18 +16,27 @@
 
 
 
-    <a class="btn btn-dark btn-lg" href="index.php#accueil" role="button">Accueil</a>
-    <a class="btn btn-dark btn-lg" href="index.php#Apropos" role="button">A propos</a>
-    <a class="btn btn-dark btn-lg" href="index.php#competences" role="button">Compétences</a>
-    <a class="btn btn-dark btn-lg" href="index.php#experience" role="button">Expérience</a>
-    <a class="btn btn-dark btn-lg" href="index.php#accueil" role="button">Formation</a>
-    <a class="btn btn-dark btn-lg" href="index.php#accueil" role="button">Contact</a>
+    <a class="btn btn-dark btn-lg" href="index.php#accueil" role="button"> Accueil</a>
+    <a class="btn btn-dark btn-lg" href="index.php#Apropos" role="button"> A propos</a>
+    <a class="btn btn-dark btn-lg" href="index.php#competences" role="button"> Compétences</a>
+    <a class="btn btn-dark btn-lg" href="index.php#experience" role="button"> Expérience</a>
+    <a class="btn btn-dark btn-lg" href="index.php#accueil" role="button"> Formation</a>
+    <a class="btn btn-dark btn-lg" href="index.php#accueil" role="button"> Contact</a>
 
-
+    
     </ol>
    </nav>
-    <main>
-  <br>
+
+     <h1 align="center">BIENVENUE SUR MON PORTFOLIO !</h1>
+
+   <main>
+    
+   
+  
+  
+  
+  
+    <br>
   <br>
   <br>
   <br>
