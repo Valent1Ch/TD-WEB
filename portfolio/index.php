@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="portfolioicon1.ico" type="image/x-icon">
    
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
    
@@ -13,17 +13,17 @@
 
     <ol>
 
-    <a  href="index.php#accueil" role="button"> Accueil</a>
-    <a  href="index.php#Apropos" role="button"> A propos</a>
-    <a  href="index.php#competences" role="button"> Compétences</a>
-    <a  href="index.php#experience" role="button"> Expérience</a>
-    <a  href="index.php#accueil" role="button"> Formation</a>
-    <a  href="index.php#accueil" role="button"> Contact</a>
+    <a  href="index.php#accueil"> Accueil</a>
+    <a  href="index.php#Apropos"> A propos</a>
+    <a  href="index.php#competences"> Compétences</a>
+    <a  href="index.php#experience"> Expérience</a>
+    <a  href="index.php#accueil"> Formation</a>
+    <a  href="index.php#accueil"> Contact</a>
  
     </ol>
    </nav>
      <main>
-    
+    <h1>BIENVENUE SUR MON PORTFOLIO</h1>
     <a name="accueil">Accueil</a>
 
     
@@ -38,12 +38,10 @@
         //echo '<pre>'.print_r($yamlContent,true).'</pre>';
         $competences=$yamlContent['sujet'];
 
-        echo "<ul class='elm'>";
-        foreach($competences as $comp){
-            echo "<li>".$comp['description']."</li>";
-            echo '<img src="'.$comp['src'].'">';
-        }
-        echo "</ul>";
+        echo "<div class='elm'>";
+        echo $yamlContent["sujet"]["description"];
+        echo '<img id="livre" src="'.$yamlContent["sujet"]["src"].'" />';
+        echo "</div>";
     
     
     ?>
@@ -97,14 +95,36 @@
   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
 </svg></a>
 
-<form method="post">
-        <label>Votre email</label>
-        <input type="email" name="email" required>
-        <label>Message</label>
-        <textarea name="message" required></textarea>
-        <input type="submit">
-    </form>
-       
+
+<ul class='elm'>
+<form name="mon-formulaire1" action="page-envoi.php" method="post">
+
+<p>
+   Votre prénom :<br />
+   <input type="text" name="prenom" value="" />
+</p>
+<p>
+   Votre nom :<br />
+   <input type="text" name="nom" value="" />
+</p>
+<p>
+   Votre adresse mail :<br />
+   <input type="text" name="mail" value="" />
+</p>
+<p>
+   Votre objet :<br />
+   <input type="text" name="objet" value="" />
+</p>
+<p>
+   Votre message :<br />
+   <textarea name="message" rows="6" cols="40">Vous pouvez saisir ici un message.</textarea>
+</p>
+<p>
+   <input type="submit" value="Envoyer" />
+   <input type="reset" value="Annuler" />
+</p>
+</form>
+    </ul>
  
     
     </main>

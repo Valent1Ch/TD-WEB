@@ -87,6 +87,17 @@ a:hover
     border-radius: 20px;
     background-image:url(background.jpg) ;
     background-position:50% 50%;
+    position: relative;
+    min-height: 300px;
 }
 
-
+#livre
+{
+    width: 300px;
+    position: absolute;
+    right: 15%;
+}
+h1
+{
+    text-align: center;
+}
