@@ -1,13 +1,18 @@
 compétences:
-  - html
+  - html 
   - css 
   - php
   - yaml
 
+image: 
+  - "testeimg.png"
+
 A propos:
 
-- étudiant en 1ere Année BTS SIO SLAM 
-- 
+
+sujet:
+  - description: étudiant en 1ere Année BTS SIO SLAM 
+    src: "testeimg.png"
 
 Experiences :
 - Stage de 3eme chez l'entreprise Adista (5jours)

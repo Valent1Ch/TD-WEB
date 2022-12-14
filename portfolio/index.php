@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   
     <title>Document</title>
 </head>
 <body>
+
    <nav>
     <ol>
         <a href="index.php#accueil">Accueil</a> 
@@ -18,7 +18,8 @@
         <a href="">Contact</a>
     </ol>
    </nav>
-    <main>
+
+   <main>
   
     <a name="accueil">Accueil</a>
 
@@ -32,11 +33,12 @@
     $content=file_get_contents('competenceyaml.yaml');
         $yamlContent=yaml_parse($content);
         //echo '<pre>'.print_r($yamlContent,true).'</pre>';
-        $competences=$yamlContent['A propos'];
+        $competences=$yamlContent['sujet'];
 
         echo "<ul class='elm'>";
         foreach($competences as $comp){
-            echo "<li>$comp</li>";
+            echo "<li>".$comp['description']."</li>";
+            echo '<img src="'.$comp['src'].'">';
         }
         echo "</ul>";
     
@@ -46,6 +48,8 @@
      <a name="competences">Compétences <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 2 16 13">
   <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
 </svg></a>
+      
+        
 
     <?php
         $content=file_get_contents('competenceyaml.yaml');
