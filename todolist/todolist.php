@@ -1,50 +1,31 @@
 <?php
-if(!isset($_SESSION)){
+if(!isset($_SESSION)) {
     session_start();
-
 }
-
-$list = $_SESSION['todolist']??[];
+$list = $_SESSION['todolist'] ?? [];
 ?>
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <h1>TODO LIST</h1>
-   
+<h1>Todo liste</h1>
+<a href="todoadd.php" class="btn btn-success">Ajouter un élément</a>
+<a href="tododelete.php" class="btn btn-warning">Supprimer tout</a>
 
-
-
-?>
-
-<form method="post">
-<input type="text" name="todo">
-
-</form>
-
+<ul class="list-group">
 <?php
-
-if(isset($_POST['todo'])) {
-    $_SESSION['todolist']=$_POST['todo'];
-    var_dump($_SESSION);
+foreach ($list as $todolist=>$elm){
+    echo "<li class='list-group-item'>$elm <a href='deleteElement.php?num=$todolist'>X</a></li>";
 }
 
 
 ?>
-
-
-
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Success</button>
+</ul>
 
 </body>
 </html>
-
-
+<?php
