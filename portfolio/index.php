@@ -22,7 +22,10 @@
  
     </ol>
    </nav>
-     <main>
+
+   
+   
+   <main>
     <h1>BIENVENUE SUR MON PORTFOLIO</h1>
     <a name="accueil">Accueil</a>
 
@@ -67,27 +70,26 @@
     ?>
 
 
-<a name="experience"> Expérience <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill" viewBox="0 2 16 13">
+<a name="experience"> Expérience Professionel <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star-fill" viewBox="0 2 16 13">
   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
 </svg>
 </a>
-
-
-
+<div class='elm'>
 <?php
-      
-        $content=file_get_contents('competenceyaml.yaml');
-        $yamlContent=yaml_parse($content);
-        //echo '<pre>'.print_r($yamlContent,true).'</pre>';
-        $competences=$yamlContent['Experiences'];
 
-        echo "<ul class='elm'>";
-        foreach($competences as $comp){
-            echo "<li>$comp</li>";
-        }
-        echo "</ul>"; 
-        
-    ?>
+$content=file_get_contents('competenceyaml.yaml');
+        $yamlContent=yaml_parse($content);
+        $competences=$yamlContent['Experiences'];
+        $experiencepro=$yamlContent['stages'][0];
+        $experiencepro2=$yamlContent['stages'][1];
+        echo  $competences=$yamlContent['Experiences'];
+        echo "<ul>";
+        echo "<li>$experiencepro</li>";
+        echo "<li>$experiencepro2</li>";  
+        echo "</ul>"
+        ?>
+</div>
+
 
 
 
@@ -96,7 +98,17 @@
 </svg></a>
 
 
-<ul class='elm'>
+<div class='elm'>
+
+<?php
+
+$competences=$yamlContent['formulaire'];
+echo $yamlContent["formulaire"]["texteformlaire"];
+
+
+
+?>
+
 <form name="mon-formulaire1" action="page-envoi.php" method="post">
 
 <p>
@@ -124,7 +136,22 @@
    <input type="reset" value="Annuler" />
 </p>
 </form>
-    </ul>
+<?php
+$content=file_get_contents('competenceyaml.yaml');
+        $yamlContent=yaml_parse($content);
+        $competences=$yamlContent['formulaire'];
+
+        echo '<img id="logoformulaire" src="'.$yamlContent["formulaire"]["image"].'" />';
+        
+        
+        $content=file_get_contents('competenceyaml.yaml');
+        $yamlContent=yaml_parse($content);
+       
+      
+       
+       
+  ?>  
+    </div>
  
     
     </main>

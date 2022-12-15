@@ -14,10 +14,18 @@ sujet:
     description: étudiant en 1ere Année BTS SIO SLAM 
     src: etudeimg.png
 
-Experiences :
-- Stage de 3eme chez l'entreprise Adista (5jours)
-- Stage de seconde chez N.W Immobilier (5jours)
+Experiences:
+  J'ai effectué au cours de ma vie 2 expériences en milieu professionnel est qui m'a appris beaucoup de choses dans ce milieu.
+  De plus cela m'a permis de me faire une idée de secteurs que je ne connaissais pas l'immobilier et le réseau en informatique.
+  Cela m'a permis de me faire une idée de ce que voulais dire travailler en milieu professionnel.  
+stages:
+   - Stage de 3eme chez l'entreprise Adista (5jours)
+   - Stage de seconde chez N.W Immobilier (5jours)
+    
 
+formulaire:
+    texteformlaire: Ce formulaire est à remplir pour pouvoir me contacter par mail ! 
+    image: logoformulaire.png
 
 
 

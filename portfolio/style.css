@@ -30,11 +30,6 @@ border-radius: 20px;
 }
 
 
-
-
-
-
-
 nav
 {
     position: sticky;
@@ -102,3 +97,15 @@ h1
     text-align: center;
 }
 
+#logoformulaire
+{
+    width: 300px;
+    position: absolute;
+    right: 15%;
+    top: 15%;
+}
+
+#texteformulaire
+{
+    border: 2px solid black;
+}
