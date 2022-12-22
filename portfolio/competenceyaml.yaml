@@ -1,8 +1,14 @@
-compétences:
-  - html 
-  - css 
-  - php
-  - yaml
+compétences: 
+  
+  - Je suis polyvalent et assidu dans ce que j'entreprend.
+  - J'ai des compétences en HTML ,CSS, PHP et YAML. 
+  - J'ai un niveau en anglais B1 scolaire. 
+  - Je sais Utiliser et mettre en place une VM debian.  
+  - Je sais utiliser les logiciels de la suite office 365 telle que word ou excel. 
+    
+    
+imgcomp: 
+  img: compétimg.png
 
 image: 
   - "testeimg.png"
@@ -11,8 +17,13 @@ A propos:
 
 
 sujet:
-    description: étudiant en 1ere Année BTS SIO SLAM 
-    src: etudeimg.png
+    description: 
+                 Je m'appelle valentin choisnet j'ai 19 ans et je suis
+                 étudiant en 1re Année de BTS Services informatiques aux organisations option SLAM qui consiste à la conception , au développement
+                 et à la maintenance de programmes applicatifs à CaenSUP.
+                 Plus tard j'ai pour vocation de devenir webmaster ou chef de projet en entreprise.
+
+    src: logo-CaenSup-noir.svg
 
 Experiences:
   J'ai effectué au cours de ma vie 2 expériences en milieu professionnel est qui m'a appris beaucoup de choses dans ce milieu.
