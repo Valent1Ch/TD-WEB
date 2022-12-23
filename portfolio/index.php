@@ -18,6 +18,7 @@
     <a  href="index.php#competences"> Compétences</a>
     <a  href="index.php#experience"> Expérience</a>
     <a  href="index.php#contact"> Contact</a>
+    <a href="https://github.com/Valent1Ch"><img class="github" src="logogithub.png">Mon github</a>
  
     </ol>
    </nav>
