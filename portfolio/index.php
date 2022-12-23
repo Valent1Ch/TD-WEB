@@ -30,7 +30,8 @@
     <a name="accueil">Accueil</a>
     <div class='elm'>
 
-   <p>Bonjour bienvenue sur le portfolio d'un etudiant en 1er année de BTS SLAM</p>
+   <p align="center">Bonjour bienvenue sur le portfolio d'un etudiant en 1er année de BTS SLAM</p>
+   <img class="photodemoi" src="moi.jpg">
 
 
 

@@ -38,7 +38,6 @@ nav
     gap:60px 50px ;
     align-content: center;
     height: 50px;
-    border: solid lightgray 2px;
     align-items: center;
     margin-left: 0px;
     border-radius: 20px;
@@ -83,7 +82,7 @@ a:hover
     background-image:url(background.jpg) ;
     background-position:50% 50%;
     position: relative;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 #livre
@@ -118,4 +117,14 @@ h1
     position: absolute;
     right: 15%;
     top:2% ;
+}
+.photodemoi
+{
+    position: absolute;
+    width: 200px;
+    height: 260px;
+    left: 40%;
+    border-radius: 20px;
+    border: 5px solid white;
+
 }
