@@ -1,0 +1,42 @@
+body {
+	padding: 10px;
+	background: #95baf7;
+}
+
+nav {
+	margin-bottom: 20px;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	margin: 0px 10px;
+	padding: 3px;
+}
+
+#index {
+	border-top: solid #b01f35 2px;
+	border-left: solid #b01f35 2px;
+	border-right: solid #b01f35 2px;
+	border-top-left-radius : 5px;
+	border-top-right-radius : 5px;
+}
+
+main img {
+	width: 150px;
+	height: 115px;
+	margin: 10px;
+	object-fit: cover;
+	padding: 3px;
+	background: white;
+	border: solid #b01f35 2px;
+	border-radius: 5px;
+}
+
+#grande {
+	height: 50vh;
+	display: block;
+	margin: auto;
+	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+	transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
