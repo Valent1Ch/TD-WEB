@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escape Game - Énigme du Mot BINAIRE</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Escape Game - Énigme du Mot BINAIRE</h1>
+    <p>Entrez le mot à décoder :</p>
+    <div id="inputContainer">
+        <input type="text" id="inputWord1" class="inputLetter" maxlength="5">
+        <input type="text" id="inputWord2" class="inputLetter" maxlength="5">
+        <input type="text" id="inputWord3" class="inputLetter" maxlength="5">
+        <input type="text" id="inputWord4" class="inputLetter" maxlength="5">
+        <input type="text" id="inputWord5" class="inputLetter" maxlength="5">
+        <input type="text" id="inputWord6" class="inputLetter" maxlength="5">
+        <input type="text" id="inputWord7" class="inputLetter" maxlength="5">
+    </div>
+
+    <button onclick="decodeBinary()">Décoder</button>
+    <p id="result"></p>
+
+    <table id="binaryTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Lettre</th>
+                <th>Binaire</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>A</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('00001')">00001</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('00010')">00010</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('00011')">00011</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>D</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('00100')">00100</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>E</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('00101')">00101</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>F</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('00110')">00110</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>G</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('00111')">00111</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>H</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01000')">01000</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>I</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01001')">01001</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>J</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01010')">01010</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>K</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01011')">01011</a></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>L</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01100')">01100</a></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>M</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01101')">01101</a></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>N</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01110')">01110</a></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>O</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('01111')">01111</a></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>P</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10000')">10000</a></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Q</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10001')">10001</a></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>R</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10010')">10010</a></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>S</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10011')">10011</a></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>T</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10100')">10100</a></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>U</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10101')">10101</a></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>V</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10110')">10110</a></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>W</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('10111')">10111</a></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>X</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('11000')">11000</a></td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Y</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('11001')">11001</a></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Z</td>
+                <td><a href="javascript:void(0);" onclick="fillInput('11010')">11010</a></td>
+            </tr>
+        </tbody>
+    </table>
+<script src="script4.js"></script>   
+</body>
+</html>

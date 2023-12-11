@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Playground</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>HTML Enigme</h1>
+
+  <button id="btn-explication" onclick="toggleExplication()">Explication</button>
+
+  <div id="texte-explication" class="text-frame" style="display: none;">
+    <p>Pour définir le titre principal de votre page, utilisez la balise &lt;h1&gt; :</p>
+    <pre>&lt;h1>Mon Titre Principal&lt;/h1&gt;</pre>
+
+    <h3>2. Paragraphes de texte</h3>
+    <p>Pour ajouter des paragraphes de texte, utilisez la balise &lt;p&gt; :</p>
+    <pre>&lt;p>Ceci est mon premier paragraphe.&lt;/p&gt;
+&lt;p>Et voici mon deuxième paragraphe.&lt;/p&gt;</pre>
+
+    <h3>3. Image</h3>
+    <p>Pour insérer une image, utilisez la balise &lt;img&gt; :</p>
+    <pre>&lt;img src="image.png"&gt;</pre>
+
+    <p>Assurez-vous de remplacer "chemin/vers/mon/image.png" par l'URL ou le chemin d'accès de votre image, et "Mon Image" par une description appropriée.</p>
+
+    <p>N'oubliez pas de fermer chaque balise avec &lt;/&gt; à la fin de chaque élément.</p>
+
+    <p>Vous pouvez personnaliser le contenu en remplaçant les exemples par vos propres textes.</p>
+
+    <p>Bonne chance avec la création de votre page HTML !</p>
+  </div>
+
+  <div id="enigme" class="text-frame">
+    <p>Enigme : Mettez un titre avec une balise &lt;h1&gt;, ajoutez un paragraphe avec le nombre de mots que vous souhaitez et insérez une image nommée "image.png".</p>
+  </div>
+
+  <div id="cadrehtml">
+    <textarea id="html-input" rows="10" cols="50" placeholder="Saisissez votre code HTML ici" oninput="updatePreview()"></textarea>
+  </div>
+
+  <div class="result-container">
+    <h2>Résultat :</h2>
+    <div id="preview" class="exclude-frame"></div>
+  </div>
+  <div id="result-content"></div>
+
+  <div id="missing-elements"></div>
+  <div id="message"></div>
+  <script src="script3.js"></script>
+</body>
+</html>

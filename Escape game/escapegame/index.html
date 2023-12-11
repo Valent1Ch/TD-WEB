@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Escape Game</title>
+</head>
+<body>
+
+    <h1>Escape Game</h1>
+    
+
+  <div id="players-box">
+    <div id="avatar-icons"></div>
+    <div id="player-names"></div>
+  </div>
+
+
+  <div class="keypad">
+    <input type="text" id="display" readonly>
+    
+    <div class="key-row">
+      <button class="key" onclick="appendToDisplay(1)">1</button>
+      <button class="key" onclick="appendToDisplay(2)">2</button>
+      <button class="key" onclick="appendToDisplay(3)">3</button>
+    </div>
+    <div class="key-row">
+      <button class="key" onclick="appendToDisplay(4)">4</button>
+      <button class="key" onclick="appendToDisplay(5)">5</button>
+      <button class="key" onclick="appendToDisplay(6)">6</button>
+    </div>
+    <div class="key-row">
+      <button class="key" onclick="appendToDisplay(7)">7</button>
+      <button class="key" onclick="appendToDisplay(8)">8</button>
+      <button class="key" onclick="appendToDisplay(9)">9</button>
+    </div>
+    <div class="key-row">
+      <button class="key" onclick="clearDisplay()">C</button>
+      <button class="key" onclick="appendToDisplay(0)">0</button>
+      <button class="key" onclick="submitCode()">Enter</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
